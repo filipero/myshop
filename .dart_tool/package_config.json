@@ -104,6 +104,12 @@
       "languageVersion": "2.4"
     },
     {
+      "name": "provider",
+      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/provider-3.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
       "name": "quiver",
       "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/quiver-2.0.5",
       "packageUri": "lib/",
@@ -176,7 +182,7 @@
       "languageVersion": "2.1"
     }
   ],
-  "generated": "2020-03-11T02:28:46.806080Z",
+  "generated": "2020-03-11T03:33:45.666214Z",
   "generator": "pub",
   "generatorVersion": "2.7.0"
 }
