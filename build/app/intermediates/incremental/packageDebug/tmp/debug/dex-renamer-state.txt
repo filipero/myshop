@@ -1,4 +1,0 @@
-#Wed Mar 11 19:54:45 BRT 2020
-base.0=E\:\\Github\\myshop\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
-path.0=classes.dex
-renamed.0=classes.dex
