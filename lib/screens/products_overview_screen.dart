@@ -5,6 +5,8 @@ import '../providers/products_provider.dart';
 import '../widgets/productsgrid.dart';
 import '../providers/cart.dart';
 import '../widgets/badge.dart';
+import './cart_screen.dart';
+import '../widgets/app_drawer.dart';
 
 enum FilterOptions {
   Favorites,
@@ -23,7 +25,7 @@ class _ProductsOverviewScreenState extends State<ProductsOverviewScreen> {
     final productsContainer = Provider.of<Products>(context);
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Minha loja'),
+        title: const Text('Loja'),
         actions: <Widget>[
           PopupMenuButton(
             onSelected: (FilterOptions selectedValue) {
@@ -53,11 +55,14 @@ class _ProductsOverviewScreenState extends State<ProductsOverviewScreen> {
             ),
             child: IconButton(
               icon: Icon(Icons.shopping_cart),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.of(context).pushNamed(CartScreen.routeName);
+              },
             ),
           ),
         ],
       ),
+      drawer: AppDrawer(),
       body: ProductsGrid(_showOnlyFavorites),
     );
   }
