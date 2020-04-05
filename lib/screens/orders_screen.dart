@@ -17,7 +17,6 @@ class _OrdersScreenState extends State<OrdersScreen> {
   var _isLoading = false;
   @override
   void initState() {
-    // TODO: implement initState
     Future.delayed(Duration.zero).then((_) async {
       setState(() {
         _isLoading = true;
